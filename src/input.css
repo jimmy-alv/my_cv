@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply text-gray-700 p-8 w-full leading-7;
+
+    h2, h3 {
+      @apply font-bold capitalize;
+    }
+
+    li {
+      @apply list-disc;
+    }
+  }
+}
+
+@layer components {
+  #container {
+    @apply min-w-xs max-w-4xl mx-auto;
+  }
+
+  header {
+    @apply mb-8;
+    
+    h1 {
+      @apply font-bold text-4xl mb-8;
+    }
+  }
+
+  #work-exp {
+    h3, h4 {
+      @apply capitalize;
+    }
+
+    .work-item {
+      @apply mb-4
+    }
+  }
+
+  #skills {
+    @apply flex flex-wrap;
+
+    h2 {
+      @apply block w-full;
+    }
+    
+    .skills-area {
+      @apply flex-1
+    }
+  }
+}
