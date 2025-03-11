@@ -230,6 +230,7 @@
     }
   }
   #skills {
+    margin-bottom: calc(var(--spacing) * 8);
     display: flex;
     flex-wrap: wrap;
     h2 {
@@ -239,6 +240,9 @@
     .skills-area {
       flex: 1;
     }
+  }
+  #education {
+    margin-bottom: calc(var(--spacing) * 8);
   }
 }
 @property --tw-leading {
